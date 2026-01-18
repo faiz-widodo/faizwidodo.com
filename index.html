@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    
+    <!-- Primary Meta Tags -->
+    <title>Faiz Widodo - Product Manager | Building Products That Deliver Customer Value</title>
+    <meta name="title" content="Faiz Widodo - Product Manager | Building Products That Deliver Customer Value">
+    <meta name="description" content="Product Manager with experience at Amazon, Alexa, ByteDance, Tokopedia, and Traveloka. MSc in Robotics from University of Bristol. Building and improving products to deliver meaningful customer value.">
+    <meta name="keywords" content="Faiz Widodo, Product Manager, Product Management, Amazon, Alexa, ByteDance, Tokopedia, Traveloka, Robotics, Chevening Scholar, University of Bristol">
+    <meta name="author" content="Faiz Widodo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://faizwidodo.com">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faizwidodo.com">
+    <meta property="og:title" content="Faiz Widodo - Product Manager">
+    <meta property="og:description" content="Product Manager with experience at Amazon, Alexa, ByteDance, Tokopedia, and Traveloka. Building products that deliver meaningful customer value.">
+    <meta property="og:image" content="https://faizwidodo.com/fw.png">
+    <meta property="og:site_name" content="faizwidodo.com">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://faizwidodo.com">
+    <meta property="twitter:title" content="Faiz Widodo - Product Manager">
+    <meta property="twitter:description" content="Product Manager with experience at Amazon, Alexa, ByteDance, Tokopedia, and Traveloka. Building products that deliver meaningful customer value.">
+    <meta property="twitter:image" content="https://faizwidodo.com/fw.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="fw.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f8aad",
+                        "background-light": "#fafafa",
+                        "background-dark": "#0a0c0d",
+                        "border-subtle": "#1e2225"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "mono": ["JetBrains Mono", "monospace"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body { 
+            font-family: 'Manrope', sans-serif; 
+            min-height: 100dvh; 
+        }
+        .mono-text { 
+            font-family: 'JetBrains Mono', monospace; 
+        }
+        .no-scrollbar::-webkit-scrollbar { 
+            display: none; 
+        }
+        .no-scrollbar { 
+            -ms-overflow-style: none; 
+            scrollbar-width: none; 
+        }
+        .terminal-grid {
+            background-image: radial-gradient(circle at 1px 1px, #1e2225 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        /* Animated scrolling - infinite loop (right to left) */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        /* Animated scrolling - infinite loop (left to right) */
+        @keyframes scroll-reverse {
+            0% {
+                transform: translateX(-50%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        .animate-scroll {
+            display: flex;
+            width: max-content;
+            animation: scroll var(--scroll-speed, 30s) linear infinite;
+            will-change: transform;
+        }
+        .animate-scroll-reverse {
+            display: flex;
+            width: max-content;
+            animation: scroll-reverse var(--scroll-speed, 30s) linear infinite;
+            will-change: transform;
+        }
+        .animate-scroll:hover,
+        .animate-scroll-reverse:hover {
+            animation-play-state: paused;
+        }
+        /* Duplicate content for seamless loop */
+        .animate-scroll > * {
+            flex-shrink: 0;
+        }
+        /* Ensure smooth infinite scrolling */
+        .scroll-container {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-slate-100 antialiased terminal-grid">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-background-dark/90 backdrop-blur-md border-b border-border-subtle">
+        <div class="flex items-center justify-between px-6 py-3 max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+                <span class="mono-text text-[11px] font-bold tracking-[0.2em] uppercase" id="nav-brand">TERMINAL.CORE</span>
+            </div>
+            <a class="px-3 py-1.5 bg-primary text-white mono-text text-[10px] font-bold rounded flex items-center gap-2 hover:bg-primary/90 transition-colors" href="#" id="nav-connect">
+                CONNECT
+                <span class="material-symbols-outlined text-[14px]">link</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="px-6 py-20 border-b border-border-subtle">
+        <div class="max-w-7xl mx-auto">
+            <div class="inline-block px-2 py-0.5 bg-primary/10 border border-primary/20 rounded mb-4">
+                <span class="mono-text text-[10px] text-primary font-bold" id="hero-status">SYSTEM_READY</span>
+            </div>
+            <h1 class="font-display font-black text-5xl leading-tight mb-6 tracking-tight">
+                <span id="hero-title-1">Left-Brain</span><br/>
+                <span class="text-primary" id="hero-title-2">Product Manager</span>
+            </h1>
+            <p class="text-slate-400 text-base leading-relaxed max-w-[300px] mono-text" id="hero-description">
+                Building high-integrity systems where <span class="text-white">Robotics</span> and <span class="text-white">Engineering</span> meet product strategy.
+            </p>
+        </div>
+    </header>
+
+    <!-- Companies Section -->
+    <section class="py-12 border-b border-border-subtle bg-black/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="mono-text text-sm font-bold text-slate-300 tracking-wider mb-8">DELIVERED_IMPACT_AT</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="companies-list">
+                <!-- Companies will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Domain Experience -->
+    <section class="py-12 border-b border-border-subtle overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="mono-text text-sm font-bold text-slate-300 tracking-wider mb-8">SUBJECT_MATTER_EXPERTISE</h3>
+            <div class="scroll-container relative overflow-hidden">
+                <div class="flex gap-2 animate-scroll" id="domains-list">
+                    <!-- Domain tags will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work -->
+    <section class="py-12 border-b border-border-subtle overflow-hidden" id="delivered-results-section" style="display: none;">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between mb-8">
+                <h3 class="mono-text text-sm font-bold tracking-tight">DELIVERED_RESULTS</h3>
+                <div class="flex items-center gap-2">
+                    <div class="h-1 w-8 bg-primary rounded-full"></div>
+                    <div class="h-1 w-2 bg-slate-700 rounded-full"></div>
+                </div>
+            </div>
+            <!-- Horizontal scroll for all screen sizes -->
+            <div class="flex overflow-x-auto gap-6 px-4 no-scrollbar snap-x snap-mandatory" id="portfolio-scroll">
+                <!-- Portfolio cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Competence -->
+    <section class="px-6 py-12 border-b border-border-subtle bg-black/20 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="mono-text text-sm font-bold mb-8 tracking-tight">CORE_COMPETENCIES</h3>
+            <div class="scroll-container relative overflow-hidden">
+                <div class="flex gap-3 animate-scroll-reverse" id="competencies-list">
+                    <!-- Competencies will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentorship -->
+    <section class="px-6 py-12 border-b border-border-subtle">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="mono-text text-sm font-bold tracking-tight mb-10">IMPACTFUL_MENTORSHIP</h3>
+            <div class="grid grid-cols-1 gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-2" id="mentorship-stats">
+                    <!-- Mentorship stats will be inserted here -->
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                    <div class="col-span-2 md:col-span-2">
+                        <h4 class="mono-text text-[9px] text-slate-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                            <span class="h-px w-4 bg-border-subtle"></span> PLATFORMS
+                        </h4>
+                        <div class="grid grid-cols-2 gap-4" id="mentorship-platforms">
+                            <!-- Mentorship platforms will be inserted here -->
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="mono-text text-[9px] text-slate-500 uppercase tracking-widest mb-4 flex items-center gap-2">
+                        <span class="h-px w-4 bg-border-subtle"></span> FEATURED_REVIEWS
+                    </h4>
+                    <div id="adplist-embed">
+                        <!-- ADPList embed will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="px-6 py-12 border-b border-border-subtle bg-black/20">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="mono-text text-sm font-bold mb-10 tracking-tight">ACADEMIC_BACKGROUND</h3>
+            <div class="relative pl-6 border-l border-border-subtle space-y-12" id="education-list">
+                <!-- Education entries will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials -->
+    <section class="px-6 py-12">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="mono-text text-sm font-bold mb-8 tracking-tight">PUBLIC_ENDPOINTS</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3" id="socials-list">
+                <!-- Social links will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-8 border-t border-border-subtle bg-black">
+        <div class="text-center max-w-7xl mx-auto">
+            <div class="flex justify-center gap-1 mb-4">
+                <div class="w-1 h-1 bg-primary"></div>
+                <div class="w-1 h-1 bg-slate-800"></div>
+                <div class="w-1 h-1 bg-slate-800"></div>
+            </div>
+            <p class="mono-text text-[9px] text-slate-600 uppercase tracking-[0.5em]" id="footer-text">DESIGNED & ENGINEERED © 2024</p>
+        </div>
+    </footer>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Faiz Widodo",
+      "jobTitle": "Product Manager",
+      "url": "https://faizwidodo.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/faizwidodo",
+        "https://faizwidodo.medium.com/",
+        "https://github.com/faiz-widodo/",
+        "https://www.youtube.com/@faizwidodo522"
+      ],
+      "description": "Product Manager with experience at Amazon, Alexa, ByteDance, Tokopedia, and Traveloka. Building products that deliver meaningful customer value.",
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "University of Bristol",
+          "degree": "Master of Science in Robotics"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Institut Teknologi Bandung",
+          "degree": "Bachelor of Science in Electrical Engineering"
+        }
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Amazon"
+        },
+        {
+          "@type": "Organization",
+          "name": "Alexa"
+        },
+        {
+          "@type": "Organization",
+          "name": "ByteDance"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Load config and render -->
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
