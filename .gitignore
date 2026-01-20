@@ -30,3 +30,16 @@ npm-debug.log*
 # Temporary files
 *.tmp
 *.temp
+*.txt
+!robots.txt
+
+# Reference/development files (not needed in production)
+code.html
+ref.html
+ref_for_mentorship.html
+temp.html
+screen.png
+githubpush.txt
+
+# Empty folders
+untitled folder/

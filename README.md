@@ -1,250 +1,141 @@
-# Personal Portfolio Website
+# Faiz Widodo - Personal Portfolio Website
 
-A modern, responsive portfolio website with a terminal/tech aesthetic. All content is easily configurable through a single configuration file.
+A modern, responsive portfolio website showcasing product management experience at Amazon, Alexa, ByteDance, Tokopedia, and Traveloka.
 
-## 📁 File Structure
+**Live Site:** [faizwidodo.com](https://faizwidodo.com)
+
+## 🚀 Features
+
+- **Fully Responsive** - Optimized for mobile, tablet, and desktop
+- **Easy Content Management** - All content configurable through `config.js`
+- **SEO Optimized** - Meta tags, structured data, and sitemap included
+- **Modern Design** - Terminal/tech aesthetic with smooth animations
+- **Fast Loading** - Static site with minimal dependencies
+
+## 📁 Project Structure
 
 ```
-├── index.html      # Main HTML file (don't edit unless you know what you're doing)
-├── config.js       # ⭐ ALL YOUR CONTENT IS HERE - Edit this file!
-├── app.js          # Rendering logic (don't edit)
-└── README.md       # This file
+├── index.html          # Main HTML file
+├── config.js           # ⭐ Content configuration (edit this!)
+├── app.js              # Rendering logic
+├── fw.png              # Favicon
+├── CNAME               # Custom domain configuration
+├── sitemap.xml         # SEO sitemap
+├── robots.txt          # Search engine directives
+├── README.md           # This file
+├── DEPLOYMENT.md       # Deployment guide
+└── SEO_IMPROVEMENTS.md # SEO optimization guide
 ```
 
-## 🚀 Quick Start
+## ✏️ Updating Content
 
-1. Open `index.html` in your web browser
-2. To update content, edit `config.js`
+All content is managed through `config.js`. Simply edit the configuration object to update:
 
-## ✏️ How to Update Content
+- **Navigation** - Brand name, connect button
+- **Hero Section** - Title, description, status
+- **Companies** - List of companies with links and colors
+- **Domain Experience** - Expertise areas
+- **Portfolio Projects** - Featured work (currently hidden)
+- **Competencies** - Core skills
+- **Mentorship** - Stats, platforms, reviews
+- **Education** - Degrees, institutions, scholarships
+- **Social Links** - LinkedIn, Medium, GitHub, YouTube
 
-### **Navigation**
-```javascript
-nav: {
-  brand: "TERMINAL.CORE",           // Change your brand name
-  connectButton: {
-    text: "CONNECT",                 // Button text
-    link: "#contact"                 // Where it links to
-  }
-}
-```
+### Example: Adding a New Company
 
-### **Hero Section**
-```javascript
-hero: {
-  status: "SYSTEM_READY",            // Status badge text
-  title: {
-    line1: "Left-Brain",             // First line of title
-    line2: "Product Manager"         // Second line (highlighted)
-  },
-  description: "Your description...", // Main description
-  highlightWords: ["Robotics", "Engineering"] // Words to highlight
-}
-```
-
-### **Companies/Partners**
-Simply add or remove company names:
 ```javascript
 companies: [
-  "AMAZON",
-  "BYTEDANCE",
-  "ABB",
-  "Tokopedia",
-  "Traveloka"
-]
-```
-
-### **Domain Experience Tags**
-Add or remove domain tags:
-```javascript
-domains: [
-  "B2C_MARKETPLACE",
-  "AD_TECH",
-  "FLIGHT_TICKETING",
-  "ROBOTICS",
-  "INDUSTRIAL_AI"
-]
-```
-
-### **Portfolio Projects** ⭐ Most Important
-
-Add, remove, or edit projects:
-```javascript
-portfolio: [
-  {
-    id: 1,
-    company: "ByteDance",                    // Company name
-    title: "Autonomous Fleet Orchestration", // Project title
-    image: "https://...",                    // Image URL (or local path)
-    metrics: [                               // Key metrics
-      { label: "Efficiency", value: "+24%_UPLIFT" },
-      { label: "Scale", value: "10k_UNITS" }
-    ],
-    link: "#",                               // Project link
-    active: true                             // true = visible, false = hidden
-  },
-  {
-    id: 2,
-    company: "Another Company",
-    title: "Another Project",
-    image: "path/to/image.jpg",              // Use local images or URLs
-    metrics: [],
-    link: "https://example.com",
-    active: true,
-    locked: false                            // Set to true for "encrypted" look
+  { 
+    name: "NEW_COMPANY", 
+    url: "https://example.com",
+    glowColor: "#FF5733"
   }
 ]
 ```
 
-**To add images:**
-- Place images in an `images/` folder
-- Reference them as: `image: "images/project1.jpg"`
-- Or use full URLs: `image: "https://example.com/image.jpg"`
+### Example: Showing Portfolio Projects
 
-### **Competencies/Skills**
 ```javascript
-competencies: [
-  {
-    name: "PRODUCT_STRATEGY",
-    icon: "terminal"                        // Material Symbols icon name
-  }
-]
-```
-
-**Available icons:** Visit [Material Symbols](https://fonts.google.com/icons) to find icon names.
-
-### **Mentorship**
-```javascript
-mentorship: {
-  status: "LIVE_SESSION",                    // Status badge
-  platforms: [
-    {
-      name: "ADPList",
-      logo: "https://...",                   // Logo image URL
-      type: "ADPList"                        // Display text
-    }
-  ],
-  impact: {
-    hours: "100+",                           // Hours mentored
-    rank: "Top 1%",                          // Ranking
-    rankLabel: "Global Rank"                 // Rank label
-  },
-  testimonial: {
-    text: "Your testimonial text...",
-    highlightWords: ["technical architecture", "market fit"]
-  }
+production: {
+  showDeliveredResults: true  // Change from false to true
 }
 ```
 
-### **Education**
-```javascript
-education: [
-  {
-    years: "2018 — 2019",                    // Date range
-    degree: "MSc in Robotics",               // Degree name
-    institution: "University of Bristol, UK", // Institution
-    badge: {
-      text: "Chevening Scholar",             // Badge text
-      icon: "award_star",                    // Icon name
-      color: "primary"                       // "primary" or "slate"
-    }
-  }
-]
+Then populate the `portfolio` array with your projects.
+
+## 🛠️ Development
+
+### Local Development
+
+1. Clone the repository
+2. Open `index.html` in a web browser
+3. Edit `config.js` to update content
+4. Refresh browser to see changes
+
+### Deployment
+
+The site is deployed via GitHub Pages. Simply push changes to the `main` branch:
+
+```bash
+git add .
+git commit -m "Update portfolio content"
+git push origin main
 ```
 
-### **Social Links**
-```javascript
-socials: [
-  {
-    name: "LinkedIn",
-    icon: "link",                            // Material Symbols icon
-    link: "https://linkedin.com/in/yourprofile" // Your profile URL
-  }
-]
-```
+GitHub Pages automatically rebuilds the site within 1-2 minutes.
 
-### **Footer**
+## 📊 SEO
+
+The site includes:
+- ✅ Optimized meta tags
+- ✅ Structured data (JSON-LD)
+- ✅ Sitemap.xml
+- ✅ Robots.txt
+- ✅ Canonical URLs
+- ✅ Open Graph tags
+- ✅ Twitter Cards
+
+See `SEO_IMPROVEMENTS.md` for optimization strategies.
+
+## 🎨 Customization
+
+### Colors
+
+Edit the Tailwind config in `index.html`:
+
 ```javascript
-footer: {
-  text: "DESIGNED & ENGINEERED © 2024"       // Footer text
+colors: {
+  "primary": "#1f8aad",        // Main brand color
+  "background-dark": "#0a0c0d", // Dark background
+  "border-subtle": "#1e2225"   // Border color
 }
 ```
 
-## 📱 Responsive Design
+### Fonts
 
-The website is fully responsive and works great on:
-- 📱 Mobile phones (320px+)
-- 📱 Tablets (768px+)
-- 💻 Desktops (1024px+)
-- 🖥️ Large screens (1280px+)
+Fonts are loaded from Google Fonts:
+- **Display**: Manrope
+- **Mono**: JetBrains Mono
 
-All content automatically adjusts for different screen sizes.
+## 📱 Browser Support
 
-## 🎨 Customization Tips
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-1. **Colors**: Edit the Tailwind config in `index.html` to change the color scheme
-2. **Fonts**: Fonts are loaded from Google Fonts - change in the `<head>` section
-3. **Images**: 
-   - Use high-quality images (recommended: 1200x675px for portfolio images)
-   - Optimize images for web (use tools like TinyPNG)
-   - Keep file sizes under 500KB for fast loading
+## 📄 License
 
-## 🔗 Adding Links
+This project is open source and available for personal use.
 
-All links can be:
-- Internal: `"#section-id"` (links to a section on the page)
-- External: `"https://example.com"` (opens in new tab automatically)
+## 🔗 Links
 
-## 📝 Best Practices
-
-1. **Keep it updated**: Regularly update your portfolio with new projects
-2. **Test links**: Make sure all links work before publishing
-3. **Optimize images**: Compress images to improve loading speed
-4. **Proofread**: Check spelling and grammar in all text
-5. **Mobile test**: Always check how it looks on mobile devices
-
-## 🚀 Deployment
-
-To deploy your website:
-
-1. **GitHub Pages**: 
-   - Push to GitHub
-   - Enable GitHub Pages in repository settings
-   - Your site will be live at `username.github.io/repo-name`
-
-2. **Netlify**:
-   - Drag and drop your folder to Netlify
-   - Or connect your GitHub repo
-   - Free hosting with automatic deployments
-
-3. **Vercel**:
-   - Connect your GitHub repo
-   - Automatic deployments on push
-
-## ❓ Troubleshooting
-
-**Images not showing?**
-- Check image paths are correct
-- Make sure images are in the right folder
-- For external URLs, ensure they allow hotlinking
-
-**Changes not appearing?**
-- Hard refresh your browser (Ctrl+Shift+R or Cmd+Shift+R)
-- Check browser console for JavaScript errors
-- Make sure `config.js` syntax is correct (no missing commas, brackets, etc.)
-
-**Layout looks broken?**
-- Check that all required fields in `config.js` are filled
-- Ensure arrays have at least one item
-- Verify JSON syntax is correct
-
-## 📧 Need Help?
-
-If you encounter issues:
-1. Check the browser console (F12) for errors
-2. Verify your `config.js` syntax is valid JavaScript
-3. Make sure all required fields are present
+- **Website**: [faizwidodo.com](https://faizwidodo.com)
+- **LinkedIn**: [linkedin.com/in/faizwidodo](https://www.linkedin.com/in/faizwidodo)
+- **GitHub**: [github.com/faiz-widodo](https://github.com/faiz-widodo)
 
 ---
 
-**Happy building! 🚀**
+**Built with:** HTML, CSS (Tailwind), JavaScript  
+**Deployed on:** GitHub Pages  
+**Domain:** faizwidodo.com
