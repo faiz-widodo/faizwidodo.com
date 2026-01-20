@@ -23,9 +23,7 @@ A modern, responsive portfolio website built with vanilla JavaScript, Tailwind C
 ├── CNAME               # Custom domain configuration for GitHub Pages
 ├── sitemap.xml         # SEO sitemap
 ├── robots.txt          # Search engine directives
-├── README.md           # This file
-├── DEPLOYMENT.md       # Deployment and hosting guide
-└── SEO_IMPROVEMENTS.md # SEO optimization strategies
+└── README.md           # This file
 ```
 
 ## 🏗️ Architecture
@@ -116,7 +114,7 @@ The site includes comprehensive SEO:
 - ✅ Open Graph tags (Facebook/LinkedIn)
 - ✅ Twitter Card meta tags
 
-See `SEO_IMPROVEMENTS.md` for optimization strategies and implementation details.
+The site includes comprehensive SEO implementation with meta tags, structured data, and sitemap.
 
 ## 🎨 Customization
 
