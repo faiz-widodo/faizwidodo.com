@@ -290,6 +290,18 @@ const portfolioConfig = {
     }
   ],
 
+  // Featured Articles (Medium Posts)
+  featuredArticles: [
+    {
+      title: "Avoiding the Pitfalls of the Super User Bubble in Decision Making",
+      url: "https://faizwidodo.medium.com/avoiding-the-pitfalls-of-the-super-user-bubble-in-decision-making-bb840d2f9569"
+    },
+    {
+      title: "My First Year at Amazon: 4 Tools That Helped Navigate My Journey",
+      url: "https://faizwidodo.medium.com/my-first-year-at-amazon-4-tools-that-helped-navigate-my-journey-8b4790f9645a"
+    }
+  ],
+
   // Footer
   footer: {
     text: "\"The best of people are the most impactful.\""
