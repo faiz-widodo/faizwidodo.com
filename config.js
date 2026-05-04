@@ -286,7 +286,7 @@ const portfolioConfig = {
     {
       name: "YouTube",
       icon: "play_circle",
-      link: "https://www.youtube.com/@faizwidodo522"
+      link: "https://www.youtube.com/@faiz-widodo"
     }
   ],
 
