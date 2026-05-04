@@ -293,6 +293,10 @@ const portfolioConfig = {
   // Featured Articles (Medium Posts)
   featuredArticles: [
     {
+      title: "Deep Research: My Favourite AI Feature Lately",
+      url: "https://medium.com/@faizwidodo/deep-research-my-favourite-ai-feature-lately-15bc214b17de"
+    },
+    {
       title: "Avoiding the Pitfalls of the Super User Bubble in Decision Making",
       url: "https://faizwidodo.medium.com/avoiding-the-pitfalls-of-the-super-user-bubble-in-decision-making-bb840d2f9569"
     },
