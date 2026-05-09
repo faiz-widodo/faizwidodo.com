@@ -290,6 +290,60 @@ const portfolioConfig = {
     }
   ],
 
+  // Books I Like
+  books: [
+    {
+      title: "The Hard Thing About Hard Things",
+      author: "Ben Horowitz",
+      note: "This book shows what leadership really feels like when things go wrong. Ben Horowitz shares his personal stories of near-bankruptcy, painful layoffs, and decisions where there is no good answer. What stayed with me is that hard choices in leadership are not exceptions. They are the job. The book is honest in a way that most business books are not."
+    },
+    {
+      title: "Algorithms to Live By",
+      author: "Brian Christian & Tom Griffiths",
+      note: "It turns out the logic behind computer algorithms also appears in everyday decisions. When to stop looking for a better option, how to manage your time, when to try new things versus sticking with what works. Once you see these patterns, they show up everywhere. A fun and eye-opening book."
+    },
+    {
+      title: "The Things You Can See Only When You Slow Down",
+      author: "Haemin Sunim",
+      note: "Short and calming reflections written by a Korean Buddhist monk. I read this during a very busy period while working at a fast-moving tech company. It helped me slow down and notice things I was missing. It probably works best when life feels overwhelming rather than when things are already balanced."
+    },
+    {
+      title: "Behind the Mask: My Autobiography",
+      author: "Tyson Fury",
+      note: "Tyson Fury became world heavyweight champion and then fell into deep depression, addiction, and despair. His honest account of that experience changed how I think about success. Reaching the top did not bring him peace. The harder and more meaningful part turned out to be fighting his way back from rock bottom."
+    },
+    {
+      title: "The Alchemist",
+      author: "Paulo Coelho",
+      note: "A simple story about a shepherd boy who leaves everything behind to follow his dream and travels from Spain all the way to Egypt. The journey teaches him far more than the destination does. It is short and easy to read, but the message about trusting your own path stays with you for a long time."
+    },
+    {
+      title: "Winning Ugly",
+      author: "Brad Gilbert",
+      note: "As a tennis fan, this book changed how I think about competition. Brad Gilbert was not the most talented player on tour, but he won matches consistently by studying opponents and finding their weaknesses. His point is that around 80 percent of matches are decided by strategy and mental approach, not raw talent. The goal is to win, not to look good doing it."
+    },
+    {
+      title: "The Da Vinci Code",
+      author: "Dan Brown",
+      note: "Growing up mostly in one country, this book sparked a real interest in travel and exploring the world. The story moves through Paris, London, and other parts of Europe, full of symbols, hidden codes, and old mysteries. As someone who enjoys puzzles, following Robert Langdon through each clue felt exciting and made me genuinely curious about history and culture."
+    },
+    {
+      title: "Ikigai",
+      author: "Héctor García & Francesc Miralles",
+      note: "The book explores a Japanese concept that can be translated as your reason for getting up in the morning. It breaks ikigai down into four areas: what you love, what you are good at, what the world needs, and what you can be paid for. Your ikigai lives at the center of all four. A simple and useful way to think about meaningful work."
+    },
+    {
+      title: "The Subtle Art of Not Giving a F*ck",
+      author: "Mark Manson",
+      note: "The main idea I got from this book is to be more careful about what you actually care about. You only have a limited amount of energy and attention, so spending it on things that do not really matter to you is a waste. It pushed me to focus more on my own values rather than chasing things that just look good from the outside."
+    },
+    {
+      title: "The Kindaichi Case Files",
+      author: "Shin Kibayashi, Fumiya Satō & Yōzaburō Kanari",
+      note: "This is a manga series, not a traditional book, but it belongs on this list. Each story is a complex murder mystery that Kindaichi solves through careful observation and logical thinking. What makes it special is that the crimes always have deep human reasons behind them, which makes the stories feel real and not just puzzles. It is one of the things that made me genuinely enjoy structured problem solving."
+    }
+  ],
+
   // Featured Articles (Medium Posts)
   featuredArticles: [
     {

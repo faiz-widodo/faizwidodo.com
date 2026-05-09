@@ -342,6 +342,28 @@ function renderPortfolio() {
         }
     }
 
+    // Render Books I Like
+    const booksList = document.getElementById('books-list');
+    if (booksList && portfolioConfig.books && portfolioConfig.books.length > 0) {
+        booksList.innerHTML = '';
+        portfolioConfig.books.forEach((book, index) => {
+            const num = String(index + 1).padStart(2, '0');
+            const div = document.createElement('div');
+            div.className = 'border border-border-subtle bg-white/[0.02] rounded-lg p-5 flex flex-col gap-3 hover:border-primary/30 transition-colors';
+            div.innerHTML = `
+                <div class="flex items-start gap-4">
+                    <span class="mono-text text-[10px] font-bold text-primary/40 shrink-0 mt-1">${num}</span>
+                    <div class="flex flex-col gap-1 min-w-0">
+                        <h4 class="font-bold text-white text-sm leading-snug">${book.title}</h4>
+                        <span class="mono-text text-[10px] font-bold text-primary uppercase tracking-wider">${book.author}</span>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-[12px] leading-relaxed pl-8">${book.note}</p>
+            `;
+            booksList.appendChild(div);
+        });
+    }
+
     // Render Socials
     const socialsList = document.getElementById('socials-list');
     socialsList.innerHTML = '';
